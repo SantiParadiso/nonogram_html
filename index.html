@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>nonogram</title>
+    <link rel="shortcut icon" href="#"/>
+</head>
+<body>
+    <h2>Nonogram playground</h2>
+    <div style="font-size: 13px; margin-bottom: 20px; margin-left: 20px;">
+    <p>Hi! So basically this is a fun project that took me two days to make.</p>
+    <p>It's purely made with HTML5, CSS and Javascript.</p>
+    <p>And... as you may tell, it's very barebones.</p>
+    <p>It can theoretically scale infinitely, but I made it <b>40x40</b> tops.</p>
+    <p style='margin-left: 100px; color: purple;'><b>~ Thank you for being here!</b> (✿◠‿◠)</p>
+    </div>
+    <div class="bloque">
+        <div id="inputs">
+            <div class="tantoxtanto">
+                <input type="text" placeholder="Horizontal" class="textIn" id="hor" value="15"/>
+                <input type="text" placeholder="Vertical" class="textIn" id="vert" value="15"/>
+            </div>
+            <input type="button" value="Calculate" id="botonazo"/>
+            <span id="error"></span>
+        </div>
+        <div style="margin-top: 20px;">
+            <div id="marcador-top"></div>
+            <div id="marcador-left"></div><div id="nono"></div>
+        </div>
+
+        <p style="font-size: 12px; color: grey;"><i>The next step is to make your results shareable and be able to solve them with feedback.<br/>Also to make it look more like a traditional nonogram, with the bolder line in the 5 block mark.</i></p>
+
+        <script type="text/javascript" src="index.js"></script>
+    </div>
+    <hr>
+
+</body>
+</html>

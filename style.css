@@ -1,0 +1,113 @@
+
+body {
+    font-family: 'Courier New', Courier, monospace
+}
+h2 {
+    display: inline-block; 
+    margin-bottom: 10px; 
+    background-color: purple; 
+    color: white; 
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+.bloque {
+    align-content: center;
+    margin-left: 25px;
+}
+#nono {
+    background-color: lightgray;
+    display: inline-block;
+}
+#inputs {
+    display: flex; 
+    flex-direction: column; 
+    width: 150px;
+    justify-content: space-evenly;
+}
+.textIn {
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%; 
+    height: 30px; 
+    font-size: 13px;
+    font-weight: bold; 
+    margin-left: 0px;
+}
+#botonazo {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 100%; 
+    height: 35px; 
+    font-size: 16px;
+}
+.nonog {
+    width: 17px;
+    height: 17px;
+    border: 0.5px solid darkgray;
+    display: table-cell;
+    border-collapse: collapse;
+    margin: 0px;
+    background-color: white;
+}
+#error {
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    padding-left: 10px;
+}
+#row {
+    display: table-row;
+    border-collapse: collapse;
+    overflow: auto;
+    max-height: 17px;
+    border: 0.5px solid black;
+}
+.nonOn {
+    width: 17px;
+    height: 17px;
+    border: 0.5px solid black;
+    display: table-cell;
+    border-collapse: collapse;
+    margin: 0px;
+    background-color: black;
+}
+.tantoxtanto {
+    display: flex;
+    flex-direction: row;
+}
+#marcador-top {
+    display: block;
+    height: 51px;
+    max-height: 68px;
+    margin-left: 51px;
+}
+#marcador-left {
+    display: inline-block;
+    width: 51px;
+    justify-content: start;
+    vertical-align:top;
+}
+.marcLeft {
+    display: block;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+    border: 0.5px solid black;
+    height: 17px;
+    width: 51px;
+    background-color: bisque;
+    font-weight: bold;
+    font-size: 12px;
+}
+.marcTop {
+    text-align: center;
+    display: table-cell;
+    word-wrap: break-word;
+    border-collapse: collapse;
+    border: 0.5px solid black;
+    height: 51px;
+    max-height: 68px;
+    width: 17px;
+    max-width: 17px;
+    background-color: bisque;
+    font-weight: bold;
+    font-size: 12px;
+}
