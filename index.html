@@ -10,6 +10,13 @@
 </head>
 <body>
     <h2>Nonogram playground</h2>
+    <div class="hidden-container">
+        <p>You will only be able to share your creation in your computer.</p>
+        <p>Sorry about that, I'm still a newbie after all.</p>
+        <p class="hidden-title"></p>
+        <div id='mark-top-solve'></div>
+        <div class="tantoxtanto"><div id='mark-left-solve'></div><div id="nono-solve"></div></div>
+    </div>
     <div style="font-size: 13px; margin-bottom: 20px; margin-left: 20px;">
     <p>Hi! So basically this is a fun project that took me two days to make.</p>
     <p>It's purely made with HTML5, CSS and Javascript.</p>
@@ -30,9 +37,11 @@
             <div id="marcador-top"></div>
             <div id="marcador-left"></div><div id="nono"></div>
         </div>
-
+        <div style="margin-top: 15px;">
+            <span style="font-size: 14px; font-weight: bold;">Title your masterpiece!: </span>
+            <input type= 'text' id='titleN' maxlength="30" style="width: 240px;"/><input type="button" value='all done!' id='inputN'/>
+        </div>
         <p style="font-size: 12px; color: grey;"><i>The next step is to make your results shareable and be able to solve them with feedback.<br/>Also to make it look more like a traditional nonogram, with the bolder line in the 5 block mark.</i></p>
-
         <script type="text/javascript" src="index.js"></script>
     </div>
     <hr>
