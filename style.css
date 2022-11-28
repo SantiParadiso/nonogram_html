@@ -1,23 +1,45 @@
 
 body {
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: #680747;
 }
 h2 {
     display: inline-block; 
     margin-bottom: 10px; 
-    background-color: purple; 
-    color: white; 
+    background-color: white;  
+    color: purple; 
     padding-left: 10px; 
     padding-right: 10px;
 }
-.bloque {
-    align-content: center;
+#board{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#first-row{
+    display: flex;
+}
+
+#second-row{
+    display: flex;
+}
+
+.content-container {
     margin-left: 25px;
 }
+
 #nono {
     background-color: lightgray;
     display: inline-block;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
 #inputs {
     display: flex; 
     flex-direction: column; 
@@ -39,15 +61,7 @@ h2 {
     height: 35px; 
     font-size: 16px;
 }
-.nonog {
-    width: 17px;
-    height: 17px;
-    border: 0.5px solid darkgray;
-    display: table-cell;
-    border-collapse: collapse;
-    margin: 0px;
-    background-color: white;
-}
+
 #error {
     font-size: 14px;
     background-color: red;
@@ -61,28 +75,37 @@ h2 {
     max-height: 17px;
     border: 0.5px solid black;
 }
-.nonOn {
+
+.square_off {
     width: 17px;
     height: 17px;
-    border: 0.5px solid black;
+    border: 0.5px solid darkgray;
     display: table-cell;
     border-collapse: collapse;
     margin: 0px;
-    background-color: black;
+    background-color: #c3195d;
+}
+
+.square_on {
+    width: 17px;
+    height: 17px;
+    border: 0.5px solid #141010;;
+    display: table-cell;
+    border-collapse: collapse;
+    margin: 0px;
+    background-color: #141010;;
 }
 .tantoxtanto {
     display: flex;
     flex-direction: row;
 }
 #marcador-top {
-    display: block;
-    height: 51px;
-    max-height: 68px;
-    margin-left: 51px;
+    display: flex;
 }
+
 #marcador-left {
-    display: inline-block;
-    width: 51px;
+    display: flex;
+    flex-direction: column;
     justify-content: start;
     vertical-align:top;
 }
@@ -99,30 +122,28 @@ h2 {
     vertical-align:top;
 }
 .marcLeft {
-    display: block;
+    display: flex;
     flex-wrap: wrap;
     border-collapse: collapse;
-    border: 0.5px solid black;
     height: 17px;
-    width: 51px;
+    min-width: 15px;
+}
+
+.helper-colour {
     background-color: bisque;
+    border: 0.5px solid black;
     font-weight: bold;
     font-size: 12px;
 }
+
 .marcTop {
     text-align: center;
     display: table-cell;
     word-wrap: break-word;
     border-collapse: collapse;
-    border: 0.5px solid black;
-    height: 51px;
-    max-height: 68px;
     width: 17px;
-    max-width: 17px;
-    background-color: bisque;
-    font-weight: bold;
-    font-size: 12px;
 }
+
 .block-container {
     padding-left: 20px;
     position: absolute; 

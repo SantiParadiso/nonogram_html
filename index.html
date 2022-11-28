@@ -9,10 +9,9 @@
     <link rel="shortcut icon" href="#"/>
 </head>
 <body>
+
     <h2>Nonogram playground</h2>
     <div class="hidden-container">
-        <p>You will only be able to share your creation in your computer.</p>
-        <p>Sorry about that, I'm still a newbie after all.</p>
         <p class="hidden-title"></p>
         <div id='mark-top-solve'></div>
         <div class="tantoxtanto"><div id='mark-left-solve'></div><div id="nono-solve"></div></div>
@@ -24,18 +23,21 @@
     <p>It can theoretically scale infinitely, but I made it <b>40x40</b> tops.</p>
     <p style='margin-left: 100px; color: purple;'><b>~ Thank you for being here!</b> (✿◠‿◠)</p>
     </div>
-    <div class="bloque">
+
+    <div class="content-container">
         <div id="inputs">
             <div class="tantoxtanto">
                 <input type="text" placeholder="Horizontal" class="textIn" id="hor" value="15"/>
                 <input type="text" placeholder="Vertical" class="textIn" id="vert" value="15"/>
             </div>
-            <input type="button" value="Calculate" id="botonazo"/>
+            <input type="button" value="Renew / Clear" id="botonazo"/>
             <span id="error"></span>
         </div>
-        <div style="margin-top: 20px;">
-            <div id="marcador-top"></div>
-            <div id="marcador-left"></div><div id="nono"></div>
+
+        <div id="board">
+                <div id="nono"></div>
+        </div>
+
         </div>
         <div style="margin-top: 15px;">
             <span style="font-size: 14px; font-weight: bold;">Title your masterpiece!: </span>
